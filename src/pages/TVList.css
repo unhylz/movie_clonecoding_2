@@ -1,0 +1,49 @@
+.tv-container {
+    position: relative;
+    width: 250px;
+    margin: 16px;
+    background-color: #373b69;
+  }
+  
+  .tv-container img {
+    max-width: 100%;
+  }
+  
+  .tv-info {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  .tv-info h4 {
+    margin: 0;
+  }
+  
+  .tv-info span {
+    margin-left: 7px;
+  }
+  
+  .tv-detail {
+    max-width: 100%;
+    position: absolute;
+    top: 10%; 
+    overflow: hidden;
+    color: white;
+    opacity: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .tv-detail div {
+    font-size: 12px;
+  }
+  
+  .tv-container:hover {
+    filter: brightness(0.6);
+  }
+  
+  .tv-container:hover .tv-detail{
+    opacity: 1;
+  }

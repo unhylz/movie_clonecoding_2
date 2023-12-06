@@ -1,0 +1,73 @@
+* {
+  /* border: 1px solid greenyellow; */
+}
+
+
+body {
+  background-color: white;
+}
+
+Header {
+  background-color: #373b69;
+  position: relative;
+}
+
+.App {
+  text-align: center;
+}
+
+.app-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-container {
+  position: relative;
+  width: 250px;
+  margin: 16px;
+  background-color: #373b69;
+}
+
+.movie-container img {
+  max-width: 100%;
+}
+
+.movie-info {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.movie-info h4 {
+  margin: 0;
+}
+
+.movie-info span {
+  margin-left: 7px;
+}
+
+.movie-detail {
+  max-width: 100%;
+  position: absolute;
+  top: 10%; 
+  overflow: hidden;
+  color: white;
+  opacity: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.movie-detail div {
+  font-size: 12px;
+}
+
+.movie-container:hover {
+  filter: brightness(0.6);
+}
+
+.movie-container:hover .movie-detail{
+  opacity: 1;
+}
